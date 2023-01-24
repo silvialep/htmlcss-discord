@@ -4,17 +4,12 @@
     box-sizing: border-box;
 }
 
-.debug {
-    border: 1px solid red;
-    background-color: aquamarine;
-}
-
 body {
-    background-color: bisque;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header {
-    background-color: blue;
+nav {
+    background-color: rgb(42, 94, 232);
 }
 
 main {
@@ -28,6 +23,12 @@ footer {
     background-color: yellow;
 }
 
+button {
+    border-radius: 20px;
+    width: 6em;
+    height: 3em;
+}
+
 .page-container {
     max-width: 1000px;
     margin-left: auto;
@@ -39,6 +40,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .logo, #login, #signin {
@@ -49,7 +51,7 @@ footer {
 #links-bar {
     flex-grow: 1;
     max-width: 500px;
-    height: 50px;
+
 }
 
 #links-bar ul {
@@ -60,26 +62,30 @@ footer {
     gap: 20px;
 
     list-style-type: none;
-    height: 100%;
 
 }
 
-#links-bar ul li {
-    width: 60px;
-    height: 30px;
+#links-bar ul li a:link {
+    color: white;
+    text-decoration: none;
+    font-size: small;
 }
 
 .jumbo {
+    background-image: url(../img/jumbo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    /* height: 500px; */
     padding: 100px;
 }
 
 #intestazione-container {
-    width: 650px;
-    height: 300px;
+    /* width: 650px; */
+    /* height: 300px; */
 
     display: flex;
     flex-direction: column;
