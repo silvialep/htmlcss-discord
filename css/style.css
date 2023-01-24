@@ -74,13 +74,15 @@ button:active {
     list-style-type: none;
 }
 
-#links-bar > ul > li > a:link {
+* a:link {
     color: white;
     text-decoration: none;
     font-size: small;
 }
-/* /stile nav */
 
+* a:visited {
+    color: white;
+}
 
 /* stile jumbo nell'header */
 .jumbo {
@@ -286,11 +288,6 @@ main .section-container:nth-of-type(even){
 
 .lista-footer li:first-child {
     color: rgb(114, 137, 218);
-}
-
-.lista-footer ul li a:link {
-    text-decoration: none;
-    color: white;
 }
 
 /* debug per controllare dov'è l'hr*/
