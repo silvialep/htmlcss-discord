@@ -235,6 +235,7 @@ main .section-container:nth-of-type(even){
     background-color: rgb(114, 137, 218);
     color: white;
 }
+
 /* / ultimo blocco */
 
 
@@ -306,4 +307,7 @@ hr {
 button.btn-signin {
     background-color: rgb(114, 137, 218);
     color: white;
+}
+button.btn-signin:hover {
+    background-color: rgb(240, 113, 164)
 }
