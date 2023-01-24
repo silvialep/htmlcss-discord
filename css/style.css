@@ -55,7 +55,7 @@ button:active {
     align-items: center;
 }
 
-.logo, #login, #signin {
+.logo, .login-signin {
     min-width: 100px;
     min-height: 50px;
 }
@@ -117,29 +117,29 @@ button:active {
     gap: 20px;
 }
 
-.btn-header {
+.btn-main {
     width: 200px;
     height: 50px;
     font-size: large;
 }
 
-.btn-header.btn-scarica {
+.btn-main.btn-scarica {
     background-color: rgb(255, 255, 255);
     color: black;
     font-size: larger;
 }
 
-.btn-header.btn-apri {
+.btn-main.btn-apri {
     background-color: black;
     color: white;
     width: 350px;
 }
 
-button.btn-header:hover {
+button.btn-main:hover {
     background-color: rgb(240, 113, 164);
 }
 
-button.btn-header:active {
+button.btn-main:active {
     background-color: #3145d5;
     box-shadow: 0 5px rgb(242, 113, 225);
     transform: translateY(4px);
@@ -166,6 +166,10 @@ main .section-container:nth-of-type(even){
 
 .section-container:nth-of-type(2) .blocco {
     flex-direction: row-reverse;
+}
+
+.section-container:nth-of-type(4) {
+    padding: 20px 0;
 }
 
 /* stilizzazione della struttura dei blocchi */
@@ -199,42 +203,38 @@ main .section-container:nth-of-type(even){
     transform: scaley(-1);
 }
 
-/* ultimi due blocchi */
+/* ultimo blocco */
 #blocco-grande {
-    flex-direction: column;
-    align-items: center;
-}
-
-/* #blocco-grande .testo {
-    width: 100%;
-    height: 30%;
-}
-
-#blocco-grande .immagine {
-    width: 100%;
-    height: 70%;
-} */
-
-#ultimo-blocco {
-    height: 300px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    background-color: bisque;
-}
-
-#ultimo-blocco .testo {
-    height: 150px;
-
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    align-content: space-around;
+}
 
-    background-color:olive;
+#blocco-grande .testo {
+    text-align: center;
+}
+
+#blocco-grande > .immagine > img {
+    min-width: 1000px;
+}
+
+.testo.stelline {
+    width: 50%;
+    font-size:xx-small;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.btn-main.btn-ultimo {
+    background-color: rgb(114, 137, 218);
+    color: white;
 }
 
 
+/* footer */
 #footer-container {
     width: 100%;
     padding-top: 20px;
