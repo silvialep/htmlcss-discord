@@ -154,7 +154,7 @@ button.btn-header:active {
     padding: 100px 0;
 }
 
-main .section-container:nth-of-type(2){
+main .section-container:nth-of-type(even){
     background-color: rgb(246, 246, 246);
 }
 
@@ -191,6 +191,13 @@ main .section-container:nth-of-type(2){
     line-height: 2em;
 }
 
+.wave {
+    opacity: 3%;
+}
+
+.wave.reversed {
+    transform: scaley(-1);
+}
 
 /* ultimi due blocchi */
 #blocco-grande {
@@ -198,18 +205,15 @@ main .section-container:nth-of-type(2){
     align-items: center;
 }
 
-#blocco-grande .testo {
+/* #blocco-grande .testo {
     width: 100%;
     height: 30%;
-
-    border: 1px solid brown;
-    background-color: cadetblue;
 }
 
 #blocco-grande .immagine {
     width: 100%;
     height: 70%;
-}
+} */
 
 #ultimo-blocco {
     height: 300px;
