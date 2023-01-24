@@ -97,7 +97,16 @@ button:active {
     align-items: center;
     gap: 20px;
 
+    color: white;
     padding: 100px;
+}
+
+#jumbo-inner h1 {
+    padding-bottom: 20px;
+}
+
+#jumbo-inner p {
+    text-align: center;
 }
 
 .bottoni-header {
