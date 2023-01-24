@@ -24,9 +24,20 @@ footer {
 }
 
 button {
-    border-radius: 20px;
+    border-radius: 30px;
     width: 6em;
     height: 3em;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(240, 113, 164);
+}
+
+button:active {
+    background-color: #3145d5;
+    box-shadow: 0 5px rgb(242, 113, 225);
+    transform: translateY(4px);
 }
 
 .page-container {
@@ -35,6 +46,7 @@ button {
     margin-right: auto;
 }
 
+/* stile nav */
 #nav-contained {
     padding-top: 20px;
     display: flex;
@@ -62,7 +74,6 @@ button {
     gap: 20px;
 
     list-style-type: none;
-
 }
 
 #links-bar ul li a:link {
@@ -70,45 +81,61 @@ button {
     text-decoration: none;
     font-size: small;
 }
+/* /stile nav */
+
 
 .jumbo {
     background-image: url(../img/jumbo.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* height: 500px; */
-    padding: 100px;
 }
 
-#intestazione-container {
-    /* width: 650px; */
-    /* height: 300px; */
-
+#jumbo-inner {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 
-    /* debug */
-    border: 1px solid black;
-    background-color: blueviolet;
+    padding: 100px;
 }
 
-/* colorazione di prova dei contenuti dell'intestazione */
-.prova {
-    width: 200px;
-    height:100px;
-    background-color: chartreuse;
-}
-
-.bottoni {
+.bottoni-header {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }
+
+.btn-header {
+    width: 200px;
+    height: 50px;
+    font-size: large;
+}
+
+.btn-header.btn-scarica {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-size: larger;
+}
+
+.btn-header.btn-apri {
+    background-color: black;
+    color: white;
+    width: 350px;
+}
+
+button.btn-header:hover {
+    background-color: rgb(240, 113, 164);
+}
+
+button.btn-header:active {
+    background-color: #3145d5;
+    box-shadow: 0 5px rgb(242, 113, 225);
+    transform: translateY(4px);
+}
+
+
 
 /* blocchi da inserire nel main */
 .blocco {
