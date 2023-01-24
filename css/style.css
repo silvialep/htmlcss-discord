@@ -74,7 +74,7 @@ button:active {
     list-style-type: none;
 }
 
-#links-bar ul li a:link {
+#links-bar > ul > li > a:link {
     color: white;
     text-decoration: none;
     font-size: small;
@@ -209,6 +209,8 @@ main .section-container:nth-of-type(even){
     align-items: center;
     justify-content: center;
     align-content: space-around;
+
+    padding-bottom: 50px;
 }
 
 #blocco-grande .testo {
@@ -238,32 +240,57 @@ main .section-container:nth-of-type(even){
 /* footer */
 #footer-container {
     width: 100%;
-    padding: 30px 0;
+    padding: 80px 0;
 
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 60px;
 }
 
-.lista-footer {
+.lista-footer, .footer-chiusura {
     width: 20%;
     height: 100%;
 
-
     display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
 
-    /* debug */
-    background-color: rgb(169, 0, 0);
+.footer-chiusura span {
+    color: rgb(114, 137, 218);
+    font-size: x-large;
+}
+
+#lingua {
+    /* width: 100%; */
+    display: flex;
+    gap: 10px;
+}
+
+#lingua > span {
+    color: white;
+    font-size: small;
+}
+
+#lingua img {
+    width: 15%;
 }
 
 .lista-footer ul {
     display: flex;
     flex-flow: column;
     list-style-type: none;
+    row-gap: 20px;
 }
 
-.lista-footer li {
-    width: 60px;
-    height: 30px;
+.lista-footer li:first-child {
+    color: rgb(114, 137, 218);
+}
+
+.lista-footer ul li a:link {
+    text-decoration: none;
+    color: white;
 }
 
 /* debug per controllare dov'è l'hr*/
